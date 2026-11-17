@@ -377,12 +377,12 @@ main, .site-footer { position: relative; z-index: 1; }
 .mini .label { margin-top: 0.25rem; }
 
 .band { position: relative; padding: 0 var(--pad); }
+/* shows the whole photo, sized so it never runs taller than the screen */
 .music__photo {
-  aspect-ratio: 16 / 8;
-  max-height: 82vh;
-  width: 100%;
+  aspect-ratio: 3 / 2;
+  width: min(100%, 130vh);
+  margin-inline: auto;
 }
-.music__photo img { object-position: 50% 42%; }
 
 /* ---------- Contact ---------- */
 
@@ -492,7 +492,6 @@ main, .site-footer { position: relative; z-index: 1; }
   .facts__row dt:empty { display: none; }
 
   .moments li { grid-template-columns: 1fr; gap: 0.6rem; }
-  .music__photo { aspect-ratio: 4 / 3; }
 
   .hero__fallback--on, .no-webgl .hero__fallback[src] { height: 48vh; top: 4.5rem; }
 }
