@@ -403,8 +403,8 @@ main, .site-footer { position: relative; z-index: 1; }
   letter-spacing: -0.03em;
 }
 .contact__lede { margin-top: 1.75rem; color: var(--ink-soft); font-size: 1.05rem; }
+.contact__emails { margin-top: 2rem; display: grid; gap: 0.7rem; justify-items: start; }
 .contact__email {
-  margin-top: 2rem;
   font-family: var(--serif);
   font-size: clamp(1.7rem, 4.2vw, 3.4rem);
   line-height: 1.1;
