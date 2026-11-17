@@ -3,7 +3,9 @@
 A one-page portfolio with a 3D dot animation. It is plain HTML, CSS, and
 JavaScript: there is nothing to install and no build step.
 
-Status (Nov 16, 2026): first draft, on this Mac only. Not published yet.
+Live at https://mosherow.github.io/ (first published Nov 16, 2026). GitHub
+Pages serves whatever is on the `main` branch of the `mosherow.github.io`
+repository, so pushing a change there updates the live site in about a minute.
 
 ## See it
 
@@ -48,6 +50,16 @@ Use the preview above to see the real thing.
 
   For the guitar figure, use `assets/shapes/guitarist.png` as the output name.
 
+## Publishing a change
+
+The easiest way is to ask Claude to make the change and publish it. By hand,
+from this folder:
+
+```bash
+git add -A && git commit -m "Describe the change" && git push
+```
+
 ## Still to do
 
 - Confirm the short descriptions under Leadership.
+- Make the job titles match between the site ("Job Shadow") and the résumé PDF ("Intern").
